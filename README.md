@@ -5,6 +5,7 @@ Basic Kong gateway using config file
 Make sure you have:
 * docker 
 * docker compose  
-run:  
+`git clone https://github.com/brayomumo/kong-gateway`  
+`cd kong-gateway`   
 `docker-compose up`
 
