@@ -1,0 +1,4 @@
+users  --> https://randomuser.me/api
+cannabis --> https://random-data-api.com/api/cannabis/random_cannabis?size=5
+banks --> https://random-data-api.com/api/bank/random_bank?size=5
+coffee --> https://random-data-api.com/api/coffee/random_coffee?size=5
