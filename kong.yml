@@ -1,0 +1,37 @@
+_format_version: "2.1"
+
+services:
+  - name: users
+    url: https://randomuser.me/api
+    routes:
+      - name: users-route
+        paths:
+          - /users
+
+  - name: cannabis
+    url: https://random-data-api.com/api/cannabis/random_cannabis?size=5
+    routes:
+      - name: cannabis-route
+        paths:
+          - /cannabis
+
+  - name: banks
+    url: https://random-data-api.com/api/bank/random_bank?size=5
+    routes:
+      - name: banks-route
+        paths:
+          - /banks
+
+  - name: coffee
+    url: https://random-data-api.com/api/coffee/random_coffee?size=5
+    routes:
+      - name: coffee-route
+        paths:
+          - /coffee    
+
+plugins:
+  - name: rate-limiting
+    service: cannabis
+    config:
+      minute: 2
+      policy: local
