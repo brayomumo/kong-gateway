@@ -9,25 +9,25 @@ services:
           - /users
 
   - name: cannabis
-    url: https://random-data-api.com/api/cannabis/random_cannabis?size=5
+    url: https://random-data-api.com/api/cannabis/random_cannabis
     routes:
       - name: cannabis-route
         paths:
           - /cannabis
 
   - name: banks
-    url: https://random-data-api.com/api/bank/random_bank?size=5
+    url: https://random-data-api.com/api/bank/random_bank
     routes:
       - name: banks-route
         paths:
           - /banks
 
-  - name: coffee
-    url: https://random-data-api.com/api/coffee/random_coffee?size=5
+  - name: dogs
+    url: https://some-random-api.ml/facts/dog
     routes:
-      - name: coffee-route
+      - name: dogs-route
         paths:
-          - /coffee    
+          - /api/dogs    
 
 plugins:
   - name: rate-limiting
